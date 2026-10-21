@@ -59,3 +59,12 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 .work::before{background:linear-gradient(180deg,rgba(3,23,21,.35) 0%,rgba(3,26,20,.18) 40%,rgba(4,28,19,.40) 100%)}
 .work .section-top h2,.work .kicker,.work .section-top>p{color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.8)}
 @media(max-width:760px){.work{background-position:center center}.work::before{background:linear-gradient(180deg,rgba(3,23,21,.45),rgba(3,26,20,.24) 40%,rgba(4,28,19,.48))}}
+
+/* Approved cinematic About section: original forest landscape and seamless transitions */
+.intro#about{position:relative;isolation:isolate;overflow:hidden;background:#10271f url('gallery-background.jpeg') center 49%/cover no-repeat;color:#fff;padding-top:135px;padding-bottom:135px}
+.intro#about::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(5,24,20,.78) 0%,rgba(7,27,22,.49) 28%,rgba(5,24,20,.56) 65%,rgba(5,24,20,.64) 100%)}
+.intro#about .kicker{color:#d0e6d6;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+.intro#about h2,.intro#about h2 span{color:#fff;text-shadow:0 3px 18px rgba(0,0,0,.28)}
+.intro#about .intro-right>p{color:#e8f0eb;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+.intro#about .chips span{color:#f4fbf5;border-color:rgba(255,255,255,.55);background:rgba(8,32,26,.38);backdrop-filter:blur(7px)}
+@media(max-width:760px){.intro#about{padding-top:95px;padding-bottom:95px;background-position:center center}.intro#about::before{background:linear-gradient(180deg,rgba(5,24,20,.82),rgba(5,24,20,.55) 50%,rgba(5,24,20,.74))}}
