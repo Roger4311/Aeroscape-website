@@ -175,3 +175,13 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 .dhara-pledge-foot{margin:28px 0 0;border-top:1px solid #b1bf9e;padding-top:18px;text-align:center;font-size:11px;letter-spacing:.25em}
 @media(max-width:850px){.dhara-section{padding:58px 16px 65px}.dhara-panels{grid-template-columns:1fr;gap:18px}.dhara-about{padding:30px 23px}.dhara-brand h2{font-size:clamp(64px,14vw,110px)}.dhara-foundation{font-size:clamp(21px,5vw,37px)}.dhara-pledge-photo{min-height:300px;flex:auto}.dhara-pledge-info{padding:28px 24px 32px}.dhara-heading small{letter-spacing:.2em}}
 @media(max-width:420px){.dhara-mission{gap:12px}.dhara-mission>span{width:46px;height:46px;flex-basis:46px;font-size:24px}.dhara-mission h3{font-size:18px}.dhara-brand p{font-size:10px}.dhara-heading p{font-size:11px}.dhara-pledge-info h3{font-size:34px}}
+
+
+/* Align Dhara Foundation and Contact sections to the same desktop section height.
+   Keep natural content height when either section needs more space. */
+@media(min-width:851px){
+  .dhara-section,.contact.contact-premium{box-sizing:border-box;min-height:1050px}
+  .dhara-section{display:flex;flex-direction:column;justify-content:center}
+}
+/* Make the original forest photograph more visible behind Contact Us. */
+.contact.contact-premium{background:linear-gradient(105deg,rgba(3,18,12,.77),rgba(6,32,23,.60)),url('assets/forest.webp') center/cover no-repeat}
