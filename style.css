@@ -53,3 +53,9 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 .work .button.dark{background:rgba(5,37,28,.78);color:#fff;border:1px solid rgba(225,241,230,.48);backdrop-filter:blur(7px)}
 .work .button.dark:hover{background:#e8f3eb;color:#0a281d}
 @media(max-width:760px){.work{padding-top:75px;padding-bottom:75px;background-position:center center}.work::before{background:rgba(2,20,15,.82)}}
+
+/* Final homepage Selected Moments background: original sunny hilltop photo */
+.work{background-image:url('photo-24.jpeg');background-position:center 58%;background-size:cover;background-repeat:no-repeat}
+.work::before{background:linear-gradient(180deg,rgba(3,23,21,.35) 0%,rgba(3,26,20,.18) 40%,rgba(4,28,19,.40) 100%)}
+.work .section-top h2,.work .kicker,.work .section-top>p{color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.8)}
+@media(max-width:760px){.work{background-position:center center}.work::before{background:linear-gradient(180deg,rgba(3,23,21,.45),rgba(3,26,20,.24) 40%,rgba(4,28,19,.48))}}
