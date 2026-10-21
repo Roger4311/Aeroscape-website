@@ -107,5 +107,5 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 @media(max-width:420px){.work .gallery{grid-template-rows:repeat(3,135px);gap:8px}.work .gallery .tile-info strong{font-size:12px}}
 
 /* Double navigation and footer text size on desktop; responsive on small screens */
-@media(min-width:761px){.header nav{font-size:26px;gap:32px}.header .navcta{font-size:24px;padding:17px 25px}footer{font-size:22px}footer>span:nth-child(2){font-size:18px;letter-spacing:.04em}}
-@media(max-width:760px){.header nav{font-size:20px}.header .navcta{font-size:14px}footer{font-size:16px}footer>span:nth-child(2){font-size:14px}}
+@media(min-width:761px){.header nav{font-size:15.6px;gap:38px}.header .navcta{font-size:14.4px;padding:13px 19px}footer{font-size:13.2px}footer>span:nth-child(2){font-size:11px;letter-spacing:.1em}}
+@media(max-width:760px){.header nav{font-size:15.6px}.header .navcta{font-size:12px}footer{font-size:13.2px}footer>span:nth-child(2){font-size:11px}}
