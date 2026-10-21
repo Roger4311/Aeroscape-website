@@ -105,3 +105,7 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 .work-categories a:hover,.work-categories a:focus-visible{background:#eaf4ee;color:#102821}
 @media(max-width:760px){.work .gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,155px)}.work .gallery .tile.tall{grid-column:span 2;grid-row:span 1}.work .gallery .tile.wide{grid-column:span 2}.work-categories{gap:8px}.work-categories a{font-size:12px;padding:9px 13px}}
 @media(max-width:420px){.work .gallery{grid-template-rows:repeat(3,135px);gap:8px}.work .gallery .tile-info strong{font-size:12px}}
+
+/* Double navigation and footer text size on desktop; responsive on small screens */
+@media(min-width:761px){.header nav{font-size:26px;gap:32px}.header .navcta{font-size:24px;padding:17px 25px}footer{font-size:22px}footer>span:nth-child(2){font-size:18px;letter-spacing:.04em}}
+@media(max-width:760px){.header nav{font-size:20px}.header .navcta{font-size:14px}footer{font-size:16px}footer>span:nth-child(2){font-size:14px}}
