@@ -68,3 +68,17 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 .intro#about .intro-right>p{color:#e8f0eb;text-shadow:0 2px 12px rgba(0,0,0,.35)}
 .intro#about .chips span{color:#f4fbf5;border-color:rgba(255,255,255,.55);background:rgba(8,32,26,.38);backdrop-filter:blur(7px)}
 @media(max-width:760px){.intro#about{padding-top:95px;padding-bottom:95px;background-position:center center}.intro#about::before{background:linear-gradient(180deg,rgba(5,24,20,.82),rgba(5,24,20,.55) 50%,rgba(5,24,20,.74))}}
+
+/* Our Story — exact original IMG_5049 photograph, never an AI-generated image */
+.intro#about.story-section{display:flex;align-items:center;min-height:650px;padding:100px 7%;position:relative;isolation:isolate;background-color:#0b271c;background-image:url('IMG_5049.jpeg');background-repeat:no-repeat;background-position:center 58%;background-size:cover;color:#fff}
+.intro#about.story-section::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(2,29,20,.94) 0%,rgba(3,31,22,.85) 22%,rgba(3,31,22,.59) 43%,rgba(3,31,22,.12) 72%,rgba(3,31,22,.02) 100%)}
+.story-content{width:min(750px,65%);position:relative;z-index:1}
+.intro#about .story-eyebrow{font-size:15px;letter-spacing:.3em;color:#c4e5c5;margin:0 0 30px;font-weight:600}
+.intro#about .story-eyebrow span{letter-spacing:0;margin-left:12px;opacity:.7}
+.intro#about.story-section h2{font-family:Manrope,sans-serif;font-size:clamp(37px,4.4vw,70px);font-weight:500;line-height:1.13;letter-spacing:-.052em;margin:0 0 30px;color:#fff}
+.intro#about.story-section h2 span{color:#b7eab9}
+.intro#about .story-description{font-size:clamp(15px,1.4vw,19px);line-height:1.65;color:#f1f7f2;max-width:590px;text-shadow:0 1px 10px rgba(0,0,0,.24);margin:0}
+.intro#about .story-rule{height:1px;width:80px;background:#b4d8b4;margin:28px 0 25px}
+.intro#about .story-signoff{color:#bfe7c1;letter-spacing:.26em;font-size:clamp(12px,1.15vw,16px);line-height:1.95;margin:0;font-weight:600}
+@media(max-width:760px){.intro#about.story-section{min-height:610px;padding:80px 7%;background-position:63% center}.intro#about.story-section::before{background:linear-gradient(90deg,rgba(2,29,20,.93) 0%,rgba(3,31,22,.72) 52%,rgba(3,31,22,.24) 100%),linear-gradient(0deg,rgba(3,31,22,.36),transparent 55%)}.story-content{width:100%;max-width:560px}.intro#about.story-section h2{font-size:clamp(36px,7.3vw,55px)}}
+@media(max-width:430px){.intro#about.story-section{min-height:610px;padding:75px 7%;background-position:61% center}.intro#about .story-eyebrow{font-size:12px}.intro#about .story-signoff{letter-spacing:.18em}}
