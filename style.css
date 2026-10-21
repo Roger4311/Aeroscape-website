@@ -32,3 +32,11 @@ footer>span:nth-child(2){font-size:9px;letter-spacing:.13em}
 .contact-form-grid input:focus,.contact-form-grid textarea:focus{outline:2px solid #a1d994;outline-offset:1px}
 @media(max-width:760px){.header{height:76px;min-height:76px}.header nav{top:76px;background:#10251b;color:#fff}.header .hero-brand{max-width:45vw;flex:0 1 45vw}.header .hero-brand img{width:100%;max-height:68px}.header .navcta{padding:10px 12px;margin-right:10px}.header .menu{color:#fff}footer .footer-logo img{width:185px}}
 @media(max-width:420px){.header .hero-brand{max-width:42vw;flex-basis:42vw}.header .hero-brand img{max-height:60px}.header .navcta{font-size:10px;padding:9px 10px}footer .footer-logo img{width:160px}}
+
+/* Larger AeroScape logo across desktop and mobile, approved scale */
+.header{height:142px;min-height:142px}
+.header .hero-brand{flex:0 1 650px;max-width:55vw}
+.header .hero-brand img{width:min(620px,51vw);max-width:100%;max-height:130px;height:auto;object-fit:contain;object-position:left center}
+footer .footer-logo img{width:420px;max-width:100%;height:auto}
+@media(max-width:760px){.header{height:94px;min-height:94px}.header nav{top:94px}.header .hero-brand{flex:0 1 56vw;max-width:56vw}.header .hero-brand img{width:100%;max-height:86px}.header .navcta{margin-right:8px}footer .footer-logo img{width:270px;max-width:100%}}
+@media(max-width:420px){.header{height:86px;min-height:86px}.header nav{top:86px}.header .hero-brand{flex:0 1 54vw;max-width:54vw}.header .hero-brand img{width:100%;max-height:78px}footer .footer-logo img{width:230px;max-width:100%}}
