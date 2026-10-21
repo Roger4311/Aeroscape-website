@@ -109,3 +109,23 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 /* Double navigation and footer text size on desktop; responsive on small screens */
 @media(min-width:761px){.header nav{font-size:15.6px;gap:38px}.header .navcta{font-size:14.4px;padding:13px 19px}footer{font-size:13.2px}footer>span:nth-child(2){font-size:11px;letter-spacing:.1em}}
 @media(max-width:760px){.header nav{font-size:15.6px}.header .navcta{font-size:12px}footer{font-size:13.2px}footer>span:nth-child(2){font-size:11px}}
+
+/* Stories in Motion — six native Instagram Reel previews; Instagram supplies covers */
+.films.reels-section{background:linear-gradient(180deg,#0b241b 0%,#071a15 100%);color:#f4f8f4;padding-top:100px;padding-bottom:100px}
+.reels-section .section-top{align-items:end;margin-bottom:32px}
+.reels-section .section-top h2{color:#fff}
+.reels-section .section-top>p{color:#c7d9cc;font-size:15px}
+.reels-section .kicker{color:#b9d9bc}
+.reels-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:13px;align-items:start}
+.reel-card{min-width:0;border-radius:14px;overflow:hidden;background:#143026;border:1px solid rgba(214,238,218,.18);box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.reel-frame{position:relative;width:100%;aspect-ratio:9/16;background:linear-gradient(140deg,#234635,#0b1b17);overflow:hidden}
+.reel-frame iframe{display:block;width:100%;height:100%;border:0;background:#f8f8f8}
+.reel-link{display:flex;flex-direction:column;gap:7px;padding:13px 12px 15px;text-decoration:none;color:#f5faf6;font-size:12px;font-weight:650}
+.reel-link span:first-child{font-size:10px;letter-spacing:.16em;color:#b3d8ba}
+.reel-link span:last-child{white-space:nowrap}
+.reel-link:hover{color:#c3f0cc}
+.reels-bottom{text-align:center;margin-top:34px}
+.reels-bottom .button.dark{background:transparent;color:#f4faf5;border:1px solid rgba(232,246,235,.58)}
+.reels-bottom .button.dark:hover{background:#d8f0dc;color:#143025}
+@media(max-width:1100px){.reels-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+@media(max-width:760px){.films.reels-section{padding-top:70px;padding-bottom:75px}.reels-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:16px;scrollbar-width:thin}.reel-card{flex:0 0 min(65vw,270px);scroll-snap-align:start}.reels-section .section-top{align-items:start}.reels-section .section-top>p{font-size:13px}}
