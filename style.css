@@ -144,3 +144,34 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 .reel-cover-caption>span{font-size:19px}
 @media(min-width:1101px){.reels-cover-grid{max-width:1020px}}
 @media(max-width:760px){.reels-cover-grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 20px;scrollbar-width:thin}.reel-cover-card{flex:0 0 min(72vw,320px);scroll-snap-align:start}.reel-cover-play{width:48px;height:48px}}
+
+
+/* Dhara Foundation initiative: replaces former quote section */
+.dhara-section{background:radial-gradient(ellipse at 8% 8%,#23472f 0%,transparent 42%),linear-gradient(155deg,#0c3020,#092719 65%,#102d20);color:#f5f3e7;padding:76px clamp(18px,5vw,90px) 88px;overflow:hidden}
+.dhara-heading{text-align:center;margin:0 auto 30px;letter-spacing:.32em;color:#c4d7a0}
+.dhara-heading .dhara-leaf{display:block;font-size:35px;color:#b5d768;line-height:1;margin-bottom:12px}
+.dhara-heading p{font-size:13px;margin:0 0 12px}.dhara-heading small{font-size:10px;letter-spacing:.42em}
+.dhara-panels{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1460px;margin:auto;align-items:stretch}
+.dhara-panel{border-radius:24px;overflow:hidden;min-width:0}
+.dhara-about{border:1px solid rgba(193,221,136,.32);background:radial-gradient(ellipse at 75% 12%,rgba(72,111,49,.3),transparent 60%),#092b1d;padding:clamp(25px,4vw,60px);display:flex;flex-direction:column}
+.dhara-brand{text-align:center;margin-bottom:28px}.dhara-sprout{display:block;font-size:29px;margin-bottom:8px}
+.dhara-brand h2{font-family:Georgia,serif;font-weight:500;font-size:clamp(58px,8vw,124px);line-height:.95;letter-spacing:.035em;margin:0;color:#f8f5e7}
+.dhara-foundation{font-size:clamp(20px,2.8vw,41px);letter-spacing:.26em;margin:8px 0 12px;font-weight:500}
+.dhara-brand p{font-size:12px;letter-spacing:.22em;color:#d5e1c5;margin:0}
+.dhara-missions{display:grid;gap:20px}.dhara-mission{display:flex;align-items:center;gap:18px}
+.dhara-mission>span{width:54px;height:54px;flex:0 0 54px;display:grid;place-items:center;border:1px solid #bddb6b;border-radius:50%;font-size:28px;color:#cbe27f}
+.dhara-mission h3{font-size:clamp(17px,1.7vw,23px);line-height:1.2;margin:0 0 4px;color:#f7f7e8}
+.dhara-mission p{font-size:clamp(12px,1.15vw,15px);line-height:1.45;color:#d2ddcc;margin:0}
+.dhara-tagline{margin:auto 0 0;padding-top:28px;text-align:center;font:italic clamp(18px,2.3vw,28px) Georgia,serif;color:#f5f0db}
+.dhara-pledge{background:#f1f0de;color:#183c27;display:flex;flex-direction:column}
+.dhara-pledge-photo{min-height:320px;flex:1 1 auto;background:linear-gradient(180deg,transparent 65%,rgba(241,240,222,.2)),url("photo-24.jpeg") center/cover no-repeat}
+.dhara-pledge-info{padding:26px clamp(24px,4vw,58px) 34px}
+.dhara-eyebrow{letter-spacing:.25em;font-weight:700;font-size:16px;margin:0 0 4px;color:#426436}
+.dhara-pledge-info h3{font-size:clamp(31px,4vw,57px);line-height:1.06;margin:0;letter-spacing:.025em;font-weight:800}
+.dhara-saplings{font-size:clamp(12px,1.4vw,18px);letter-spacing:.18em;margin:12px 0 20px}
+.dhara-count{display:flex;align-items:baseline;gap:15px}.dhara-count strong{font-size:clamp(43px,5vw,68px);font-weight:500;line-height:1.1}.dhara-count strong span{font-weight:300}.dhara-count>span{font-size:15px;letter-spacing:.08em}
+.dhara-progress{height:12px;border-radius:50px;background:#cbd5b8;overflow:hidden;margin:12px 0 10px}.dhara-progress>span{display:block;height:100%;width:2%;min-width:10px;background:#42762c;border-radius:50px}
+.dhara-stats{display:flex;justify-content:space-between;gap:12px;font-size:14px;letter-spacing:.06em}
+.dhara-pledge-foot{margin:28px 0 0;border-top:1px solid #b1bf9e;padding-top:18px;text-align:center;font-size:11px;letter-spacing:.25em}
+@media(max-width:850px){.dhara-section{padding:58px 16px 65px}.dhara-panels{grid-template-columns:1fr;gap:18px}.dhara-about{padding:30px 23px}.dhara-brand h2{font-size:clamp(64px,14vw,110px)}.dhara-foundation{font-size:clamp(21px,5vw,37px)}.dhara-pledge-photo{min-height:300px;flex:auto}.dhara-pledge-info{padding:28px 24px 32px}.dhara-heading small{letter-spacing:.2em}}
+@media(max-width:420px){.dhara-mission{gap:12px}.dhara-mission>span{width:46px;height:46px;flex-basis:46px;font-size:24px}.dhara-mission h3{font-size:18px}.dhara-brand p{font-size:10px}.dhara-heading p{font-size:11px}.dhara-pledge-info h3{font-size:34px}}
