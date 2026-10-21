@@ -11,3 +11,9 @@
 /* iPhone autoplay fallback: visible only when playback is blocked. */
 .hero-play{position:absolute;z-index:5;left:50%;bottom:82px;transform:translateX(-50%);border:1px solid rgba(255,255,255,.6);border-radius:999px;background:rgba(10,27,19,.8);color:#fff;padding:12px 20px;font:700 13px 'DM Sans',sans-serif;white-space:nowrap;backdrop-filter:blur(8px)}
 .hero-play[hidden]{display:none!important}
+
+/* Keep the approved AeroScape logo fully inside the navigation header. */
+.header .hero-brand{flex:0 1 auto;min-width:0;max-width:240px}
+.header .hero-brand img{display:block;width:220px;max-width:100%;height:auto;max-height:68px;object-fit:contain;object-position:left center}
+@media(max-width:760px){.header .hero-brand{max-width:42vw}.header .hero-brand img{width:155px;max-height:55px}}
+@media(max-width:420px){.header .hero-brand{max-width:39vw}.header .hero-brand img{width:140px;max-height:51px}}
