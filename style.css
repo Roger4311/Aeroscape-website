@@ -40,3 +40,16 @@ footer>span:nth-child(2){font-size:9px;letter-spacing:.13em}
 footer .footer-logo img{width:420px;max-width:100%;height:auto}
 @media(max-width:760px){.header{height:94px;min-height:94px}.header nav{top:94px}.header .hero-brand{flex:0 1 56vw;max-width:56vw}.header .hero-brand img{width:100%;max-height:86px}.header .navcta{margin-right:8px}footer .footer-logo img{width:270px;max-width:100%}}
 @media(max-width:420px){.header{height:86px;min-height:86px}.header nav{top:86px}.header .hero-brand{flex:0 1 54vw;max-width:54vw}.header .hero-brand img{width:100%;max-height:78px}footer .footer-logo img{width:230px;max-width:100%}}
+
+/* Approved AeroScape cinematic Selected Moments section — original photography only */
+.work{position:relative;isolation:isolate;background:#071d18 url('gallery-background.jpeg') center center/cover no-repeat;color:#f5f8f4;padding-top:105px;padding-bottom:105px}
+.work::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(2,21,16,.82),rgba(3,25,19,.78) 45%,rgba(1,18,14,.88))}
+.work .kicker{color:#c9ded0}
+.work .section-top>p{color:#d6e6dd}
+.work .section-top h2{color:#fff}
+.work .gallery{gap:14px}
+.work .tile{border-radius:7px;box-shadow:0 12px 34px rgba(0,0,0,.24);outline:1px solid rgba(255,255,255,.18);outline-offset:-1px}
+.work .tile-info strong{color:#fff}
+.work .button.dark{background:rgba(5,37,28,.78);color:#fff;border:1px solid rgba(225,241,230,.48);backdrop-filter:blur(7px)}
+.work .button.dark:hover{background:#e8f3eb;color:#0a281d}
+@media(max-width:760px){.work{padding-top:75px;padding-bottom:75px;background-position:center center}.work::before{background:rgba(2,20,15,.82)}}
