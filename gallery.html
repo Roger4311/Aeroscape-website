@@ -28,6 +28,32 @@ footer{background:#071314;border-top:1px solid rgba(255,255,255,.1)}
 /* Gallery editorial caption: 1.2x size with elegant contrasting typography */
 .headrow p{font-family:'Playfair Display',Georgia,serif;font-size:16.8px;font-style:italic;font-weight:500;line-height:1.7;letter-spacing:.005em;color:#e6f1e8;max-width:360px;text-shadow:0 2px 12px rgba(0,0,0,.35)}
 @media(max-width:570px){.headrow p{font-size:16.8px;max-width:100%;line-height:1.6}}
+
+/* Final approved compact cinematic gallery, using only AeroScape original media */
+header{min-height:96px;padding:12px clamp(20px,4vw,65px);background:rgba(5,17,19,.88)}
+.brand img{width:clamp(210px,24vw,330px);max-height:75px}
+.hero{padding:72px clamp(20px,4vw,65px) 24px}
+.hero::before{background-position:center 47%}
+.hero::after{background:linear-gradient(90deg,rgba(2,15,17,.88),rgba(2,15,17,.43) 60%,rgba(2,15,17,.18)),linear-gradient(180deg,rgba(2,15,17,.1),#0b1718 100%)}
+.hero>.eyebrow,.hero>.headrow,.hero>.filters{max-width:1540px}
+.headrow{align-items:center}
+.headrow h1{font-size:clamp(44px,5.3vw,79px);letter-spacing:-.055em;margin:20px 0 12px}
+.headrow p{max-width:380px}
+.filters{margin-top:30px;margin-bottom:5px;gap:12px}
+.filters button{padding:13px 23px;border-radius:999px}
+.gallery{max-width:none;grid-template-columns:repeat(5,minmax(0,1fr));gap:13px;padding:20px clamp(20px,4vw,65px) 100px}
+.tile,.tile:nth-child(7n+1),.film{grid-column:auto;aspect-ratio:1.52;border-radius:12px;box-shadow:none;min-height:0}
+.tile img,.tile video{object-fit:cover}
+.film video{object-fit:cover}
+.film-title{left:11px;top:10px;gap:4px}
+.film-title span{font-size:8px}
+.film-title strong{font-size:13px}
+.tile-info{padding:30px 10px 10px}
+.tile-info strong{font-size:12px}
+.film video::-webkit-media-controls-panel{opacity:.7}
+@media(max-width:1150px){.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:850px){.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.headrow{align-items:start;flex-direction:column}.headrow p{max-width:650px}}
+@media(max-width:570px){header{min-height:84px;padding:12px 17px}.brand img{width:clamp(160px,48vw,230px);max-height:62px}header nav{font-size:11px;gap:12px}.hero{padding:55px 18px 20px}.headrow h1{font-size:clamp(40px,9vw,55px)}.filters{gap:8px;margin-top:24px}.filters button{padding:10px 14px;font-size:11px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding:12px 15px 65px}.tile,.tile:nth-child(7n+1),.film{aspect-ratio:1.12}.film-title strong{font-size:11px}.film-title span{font-size:7px}}
 </style></head><body><header><a class="brand" href="index.html" aria-label="AeroScape home"><img src="AeroScape-Corrected-Logo.png" alt="AeroScape — Escape Into Nature"></a><nav><a href="index.html">HOME</a><span style="opacity:1;color:white">GALLERY</span><a href="index.html#contact">CONTACT</a></nav></header><main><section class="hero"><div class="eyebrow">SELECTED MOMENTS · THE AEROSCAPE COLLECTION</div><div class="headrow"><h1>Stories in <em>every frame.</em></h1><p>Every frame holds a different story — from the landscapes we explore to the little moments we never want to forget.</p></div><div class="filters"><button data-filter="aerial">Aerial Films</button><button data-filter="nature">Nature</button><button data-filter="lens">Through Our Lens</button><button data-filter="wildlife">Wildlife</button></div></section><section class="gallery" id="gallery"><article class="tile film" data-category="aerial"><video preload="metadata" muted playsinline controls controlsList="nodownload" disablePictureInPicture src="aerial-film-1.mp4"></video><div class="film-title"><span>DRONE CINEMATOGRAPHY</span><strong>Aerial Film 01</strong></div></article>
 <article class="tile film" data-category="aerial"><video preload="metadata" muted playsinline controls controlsList="nodownload" disablePictureInPicture src="aerial-film-2.mp4"></video><div class="film-title"><span>DRONE CINEMATOGRAPHY</span><strong>Aerial Film 02</strong></div></article>
 <article class="tile film" data-category="aerial"><video preload="metadata" muted playsinline controls controlsList="nodownload" disablePictureInPicture src="aerial-film-3.mp4"></video><div class="film-title"><span>DRONE CINEMATOGRAPHY</span><strong>Aerial Film 03</strong></div></article>
