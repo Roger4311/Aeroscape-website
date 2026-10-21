@@ -91,3 +91,17 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 /* Shift original Our Story photograph so the couple appears farther right; no image edits */
 @media(min-width:761px){.intro#about.story-section{background-size:118% auto;background-position:left 76%}}
 @media(max-width:760px){.intro#about.story-section{background-size:auto 112%;background-position:38% 72%}}
+
+/* Compact Selected Moments gallery and category links */
+.work .gallery{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,185px);gap:12px}
+.work .gallery .tile.tall{grid-column:span 2;grid-row:span 2}
+.work .gallery .tile.wide{grid-column:span 2;grid-row:span 1}
+.work .gallery .tile{min-height:0;border-radius:9px}
+.work .gallery .tile-info{bottom:14px;left:16px;right:16px}
+.work .gallery .tile-info strong{font-size:clamp(12px,1.2vw,16px);font-weight:650;letter-spacing:0}
+.work .gallery .tile-info .arrow{font-size:17px}
+.work-categories{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 22px}
+.work-categories a{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:10px 19px;background:rgba(5,24,23,.47);color:#fff;text-decoration:none;font-size:13px;font-weight:600;backdrop-filter:blur(8px);transition:background .2s ease,color .2s ease}
+.work-categories a:hover,.work-categories a:focus-visible{background:#eaf4ee;color:#102821}
+@media(max-width:760px){.work .gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,155px)}.work .gallery .tile.tall{grid-column:span 2;grid-row:span 1}.work .gallery .tile.wide{grid-column:span 2}.work-categories{gap:8px}.work-categories a{font-size:12px;padding:9px 13px}}
+@media(max-width:420px){.work .gallery{grid-template-rows:repeat(3,135px);gap:8px}.work .gallery .tile-info strong{font-size:12px}}
