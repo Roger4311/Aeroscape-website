@@ -179,9 +179,38 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 
 /* Align Dhara Foundation and Contact sections to the same desktop section height.
    Keep natural content height when either section needs more space. */
-@media(min-width:851px){
-  .dhara-section,.contact.contact-premium{box-sizing:border-box;min-height:1050px}
-  .dhara-section{display:flex;flex-direction:column;justify-content:center}
+@media(min-width:951px){
+  /* Keep these sections close to the approved Stories in Motion section's visual height. */
+  .dhara-section,.contact.contact-premium{box-sizing:border-box;min-height:0}
+  .dhara-section{display:block;padding-top:48px;padding-bottom:52px}
+  .dhara-heading{margin-bottom:20px}
+  .dhara-heading .dhara-leaf{font-size:25px;margin-bottom:7px}
+  .dhara-about{padding:25px 30px}
+  .dhara-brand{margin-bottom:20px}
+  .dhara-brand h2{font-size:clamp(56px,5.4vw,82px)}
+  .dhara-foundation{font-size:clamp(19px,2.1vw,30px);margin:5px 0 8px}
+  .dhara-missions{gap:10px}
+  .dhara-mission>span{width:42px;height:42px;flex-basis:42px;font-size:22px}
+  .dhara-mission h3{font-size:17px;margin-bottom:2px}
+  .dhara-mission p{font-size:12px}
+  .dhara-tagline{padding-top:14px;font-size:21px}
+  .dhara-pledge-photo{min-height:245px}
+  .dhara-pledge-info{padding:18px 30px 22px}
+  .dhara-pledge-info h3{font-size:clamp(29px,3vw,43px)}
+  .dhara-saplings{margin:7px 0 10px}
+  .dhara-count strong{font-size:45px}
+  .dhara-pledge-foot{margin-top:14px;padding-top:12px}
+  .contact.contact-premium{padding-top:46px;padding-bottom:45px}
+  .contact-heading{margin-bottom:20px}
+  .contact-heading h2{font-size:clamp(48px,5vw,70px)}
+  .contact-card{min-height:125px;padding:17px}
+  .contact-card h3{margin:5px 0 8px}
+  .contact-lower{margin-top:12px}
+  .contact-panel{padding:18px}
+  .contact-panel>p{margin-bottom:12px}
+  .contact-map-art{min-height:170px}
+  .contact-values{margin-top:18px}
 }
-/* Make the original forest photograph more visible behind Contact Us. */
-.contact.contact-premium{background:linear-gradient(105deg,rgba(3,18,12,.77),rgba(6,32,23,.60)),url('assets/forest.webp') center/cover no-repeat}
+/* Brighter forest photo with a subtle dark-green wash for readable text. */
+.contact.contact-premium{background:linear-gradient(105deg,rgba(3,18,12,.48),rgba(6,32,23,.34)),url('assets/forest.webp') center/cover no-repeat}
+
