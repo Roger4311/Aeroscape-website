@@ -56,3 +56,38 @@ document.getElementById('contact-form')?.addEventListener('submit', async functi
   });
   tryPlay();
 })();
+
+
+// Keep the Stories in Motion background playing inline on iOS and Android.
+(() => {
+  const video = document.querySelector('#films .reels-background-video');
+  if (!video) return;
+  video.muted = true;
+  video.defaultMuted = true;
+  video.playsInline = true;
+  video.setAttribute('muted', '');
+  video.setAttribute('playsinline', '');
+  video.setAttribute('webkit-playsinline', '');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const tryPlay = () => {
+    if (document.hidden || reducedMotion.matches || !video.paused) return;
+    const promise = video.play();
+    if (promise && typeof promise.catch === 'function') promise.catch(() => {
+      // The original-photo CSS fallback remains visible if autoplay is blocked.
+    });
+  };
+  video.addEventListener('loadeddata', tryPlay);
+  video.addEventListener('canplay', tryPlay);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) tryPlay(); });
+  window.addEventListener('pageshow', tryPlay);
+  const section = document.getElementById('films');
+  if ('IntersectionObserver' in window && section) {
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) tryPlay();
+    }, { threshold: 0.05 });
+    observer.observe(section);
+  }
+  // Mobile browsers may permit playback after the first user gesture.
+  document.addEventListener('touchstart', tryPlay, { once: true, passive: true });
+  tryPlay();
+})();
