@@ -214,3 +214,13 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 /* Brighter forest photo with a subtle dark-green wash for readable text. */
 .contact.contact-premium{background:linear-gradient(105deg,rgba(3,18,12,.48),rgba(6,32,23,.34)),url('assets/forest.webp') center/cover no-repeat}
 
+
+
+/* AeroScape miniature flying drone — decorative and non-blocking. */
+.aeroscape-mini-drone{position:fixed;top:0;left:0;width:38px;height:38px;z-index:90;pointer-events:none;opacity:0;will-change:transform,opacity;transition:opacity .7s ease;filter:drop-shadow(0 2px 3px rgba(0,0,0,.38))}
+.aeroscape-mini-drone.is-visible{opacity:.88}
+.aeroscape-mini-drone svg{display:block;width:100%;height:100%;overflow:visible}
+.aeroscape-mini-drone .drone-propeller{transform-box:fill-box;transform-origin:center;animation:aeroscape-prop-spin .14s linear infinite}
+@keyframes aeroscape-prop-spin{to{transform:rotate(360deg)}}
+@media(max-width:600px){.aeroscape-mini-drone{width:28px;height:28px;opacity:0}.aeroscape-mini-drone.is-visible{opacity:.75}}
+@media(prefers-reduced-motion:reduce){.aeroscape-mini-drone{display:none!important}}
