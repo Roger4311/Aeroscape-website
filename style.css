@@ -129,3 +129,18 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 .reels-bottom .button.dark:hover{background:#d8f0dc;color:#143025}
 @media(max-width:1100px){.reels-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
 @media(max-width:760px){.films.reels-section{padding-top:70px;padding-bottom:75px}.reels-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:16px;scrollbar-width:thin}.reel-card{flex:0 0 min(65vw,270px);scroll-snap-align:start}.reels-section .section-top{align-items:start}.reels-section .section-top>p{font-size:13px}}
+
+/* Clean original-cover Instagram reel cards (no third-party embed UI) */
+.reels-cover-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:1150px;margin:0 auto}
+.reel-cover-card{display:block;position:relative;aspect-ratio:9/16;border-radius:18px;overflow:hidden;background:#18372b;color:#fff;text-decoration:none;isolation:isolate;box-shadow:0 16px 40px rgba(0,0,0,.28);transition:transform .25s ease,box-shadow .25s ease}
+.reel-cover-card:hover{transform:translateY(-5px);box-shadow:0 24px 55px rgba(0,0,0,.38)}
+.reel-cover-card img{display:block;width:100%;height:100%;object-fit:contain;background:#11291f;transition:transform .4s ease}
+.reel-cover-card:hover img{transform:scale(1.025)}
+.reel-cover-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(8,26,20,.48);border:1px solid rgba(255,255,255,.7);font-size:22px;padding-left:3px;backdrop-filter:blur(5px);opacity:.88;transition:background .2s ease,transform .2s ease}
+.reel-cover-card:hover .reel-cover-play{background:rgba(8,26,20,.78);transform:translate(-50%,-50%) scale(1.1)}
+.reel-cover-caption{position:absolute;left:0;right:0;bottom:0;padding:42px 18px 17px;background:linear-gradient(transparent,rgba(0,0,0,.73));display:flex;align-items:center;gap:10px}
+.reel-cover-caption small{font-size:10px;letter-spacing:.13em;opacity:.78}
+.reel-cover-caption strong{font-size:14px;font-weight:600;flex:1}
+.reel-cover-caption>span{font-size:19px}
+@media(min-width:1101px){.reels-cover-grid{max-width:1020px}}
+@media(max-width:760px){.reels-cover-grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 20px;scrollbar-width:thin}.reel-cover-card{flex:0 0 min(72vw,320px);scroll-snap-align:start}.reel-cover-play{width:48px;height:48px}}
