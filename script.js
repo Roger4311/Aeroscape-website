@@ -133,8 +133,9 @@ document.getElementById('contact-form')?.addEventListener('submit', async functi
   };
   const startDrone = () => {
     if(raf || document.hidden)return;
-    if(x<0){x=window.innerWidth+10;y=window.innerHeight*.3;pauseUntil=0;}
+    if(x<0){x=Math.max(45,window.innerWidth*.72);y=Math.max(90,window.innerHeight*.32);pauseUntil=0;}
     drone.classList.add('is-visible');
+    drone.style.transform=`translate3d(${x}px,${y}px,0)`;
     raf=requestAnimationFrame(animate);
   };
   document.addEventListener('visibilitychange', () => {
