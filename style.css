@@ -70,7 +70,7 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 @media(max-width:760px){.intro#about{padding-top:95px;padding-bottom:95px;background-position:center center}.intro#about::before{background:linear-gradient(180deg,rgba(5,24,20,.82),rgba(5,24,20,.55) 50%,rgba(5,24,20,.74))}}
 
 /* Our Story — exact original IMG_5049 photograph, never an AI-generated image */
-.intro#about.story-section{display:flex;align-items:center;min-height:650px;padding:100px 7%;position:relative;isolation:isolate;background-color:#0b271c;background-image:url('IMG_5049.jpeg');background-repeat:no-repeat;background-position:center 58%;background-size:cover;color:#fff}
+.intro#about.story-section{display:flex;align-items:center;min-height:650px;padding:100px 7%;position:relative;isolation:isolate;background-color:#0b271c;background-image:url('IMG_5049.jpg');background-repeat:no-repeat;background-position:center 58%;background-size:cover;color:#fff}
 .intro#about.story-section::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(2,29,20,.94) 0%,rgba(3,31,22,.85) 22%,rgba(3,31,22,.59) 43%,rgba(3,31,22,.12) 72%,rgba(3,31,22,.02) 100%)}
 .story-content{width:min(750px,65%);position:relative;z-index:1}
 .intro#about .story-eyebrow{font-size:15px;letter-spacing:.3em;color:#c4e5c5;margin:0 0 30px;font-weight:600}
