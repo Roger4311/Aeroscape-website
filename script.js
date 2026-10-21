@@ -17,7 +17,7 @@ document.getElementById('contact-form')?.addEventListener('submit', async functi
     status.textContent = 'Thank you! Your message has been submitted.';
     form.reset();
   } catch(error) {
-    status.textContent = 'Message not sent. Please try again or email mitalp@zohomail.in.';
+    status.textContent = 'Message not sent. Please try again or email mital.p@zohomail.in.';
   } finally {
     button.disabled = false;
     button.textContent = 'Send Message ↗';
