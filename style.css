@@ -17,3 +17,18 @@
 .header .hero-brand img{display:block;width:220px;max-width:100%;height:auto;max-height:68px;object-fit:contain;object-position:left center}
 @media(max-width:760px){.header .hero-brand{max-width:42vw}.header .hero-brand img{width:155px;max-height:55px}}
 @media(max-width:420px){.header .hero-brand{max-width:39vw}.header .hero-brand img{width:140px;max-height:51px}}
+
+/* AeroScape final: silver original logo on dark cinematic header. */
+.header{background:#0b1d15;color:#f5f8f1;min-height:104px;height:104px;padding-left:5%;padding-right:5%}
+.header nav a:hover{color:#a2dd95}
+.header .hero-brand{max-width:none;flex:0 1 410px}
+.header .hero-brand img{width:min(390px,31vw);height:auto;max-height:94px;max-width:100%;object-fit:contain;object-position:left center}
+.header .navcta{background:#a5db95;color:#102418}
+footer{background:#0b1d15;color:#d3e3d5;gap:24px;min-height:110px}
+footer .footer-logo{display:flex;align-items:center;flex:0 0 auto}
+footer .footer-logo img{display:block;width:225px;max-width:100%;height:auto}
+footer>span:nth-child(2){font-size:9px;letter-spacing:.13em}
+#form-status{margin:12px 0 0;color:#c3e9bb;font-size:13px;min-height:18px}
+.contact-form-grid input:focus,.contact-form-grid textarea:focus{outline:2px solid #a1d994;outline-offset:1px}
+@media(max-width:760px){.header{height:76px;min-height:76px}.header nav{top:76px;background:#10251b;color:#fff}.header .hero-brand{max-width:45vw;flex:0 1 45vw}.header .hero-brand img{width:100%;max-height:68px}.header .navcta{padding:10px 12px;margin-right:10px}.header .menu{color:#fff}footer .footer-logo img{width:185px}}
+@media(max-width:420px){.header .hero-brand{max-width:42vw;flex-basis:42vw}.header .hero-brand img{max-height:60px}.header .navcta{font-size:10px;padding:9px 10px}footer .footer-logo img{width:160px}}
