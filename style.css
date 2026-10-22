@@ -224,3 +224,34 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 @keyframes aeroscape-prop-spin{to{transform:rotate(360deg)}}
 @media(max-width:600px){.aeroscape-mini-drone{width:28px;height:28px;opacity:0}.aeroscape-mini-drone.is-visible{opacity:.75}}
 @media(prefers-reduced-motion:reduce){.aeroscape-mini-drone{display:none!important}}
+
+
+/* Dhara Foundation activity gallery: additive section, original panels unchanged. */
+.dhara-activities{max-width:1100px;margin:36px auto 0;padding:0 12px 10px}
+.dhara-activities-heading{text-align:center;margin-bottom:20px;color:#e9efdc}
+.dhara-activities-heading p{font-size:11px;letter-spacing:.22em;color:#b6ce9c;margin:0 0 9px}
+.dhara-activities-heading h3{font-family:Georgia,serif;font-size:clamp(27px,3vw,38px);font-weight:500;margin:0 0 7px}
+.dhara-activities-heading>span{font-size:13px;color:#c7d3bc}
+.dhara-activity-card{display:flex;align-items:center;text-align:left;width:min(100%,650px);margin:auto;padding:10px;gap:18px;background:rgba(236,242,218,.1);border:1px solid rgba(222,237,199,.25);border-radius:15px;color:#f2f5e9;cursor:pointer;transition:background .2s,transform .2s;font:inherit}
+.dhara-activity-card:hover,.dhara-activity-card:focus-visible{background:rgba(236,242,218,.18);transform:translateY(-2px)}
+.dhara-activity-card img{width:125px;height:95px;object-fit:cover;border-radius:9px;flex:none}
+.dhara-activity-copy{display:flex;flex:1;flex-direction:column;gap:5px}
+.dhara-activity-copy strong{font-family:Georgia,serif;font-size:22px;font-weight:500}
+.dhara-activity-copy small{font-size:13px;color:#d2dfc8}
+.dhara-activity-copy>span{font-size:12px;color:#c6dbab}
+.dhara-activity-arrow{font-size:24px;margin-right:12px;color:#c6dbab}
+.dhara-gallery-dialog{width:min(1100px,96vw);max-width:none;max-height:95vh;border:1px solid #55705c;border-radius:17px;background:#10271b;color:#f5f5eb;padding:18px;box-shadow:0 25px 90px #0009}
+.dhara-gallery-dialog::backdrop{background:rgba(0,0,0,.86)}
+.dhara-gallery-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:12px}
+.dhara-gallery-top small{color:#b9d29d;font-size:10px;letter-spacing:.12em}
+.dhara-gallery-top h3{font-family:Georgia,serif;font-size:26px;font-weight:500;margin:4px 0}
+.dhara-gallery-top p{margin:0;color:#d0dec8;font-size:12px}
+.dhara-gallery-close{border:1px solid #607665;background:#2a4431;color:white;border-radius:50%;width:38px;height:38px;font-size:25px;cursor:pointer}
+.dhara-gallery-stage{display:flex;align-items:center;justify-content:center;gap:10px;min-height:200px}
+.dhara-gallery-stage img{display:block;max-width:calc(100% - 92px);max-height:60vh;width:auto;height:auto;object-fit:contain;border-radius:6px}
+.dhara-gallery-nav{background:#2d4a35;color:white;border:1px solid #789078;border-radius:50%;width:39px;height:39px;flex:none;font-size:30px;line-height:1;cursor:pointer}
+.dhara-gallery-thumbs{display:flex;gap:7px;overflow-x:auto;padding:12px 0 2px;scrollbar-width:thin}
+.dhara-gallery-thumbs button{padding:0;background:none;border:2px solid transparent;border-radius:6px;cursor:pointer;flex:none}
+.dhara-gallery-thumbs button[aria-current="true"]{border-color:#c8e3a6}
+.dhara-gallery-thumbs img{display:block;width:65px;height:52px;object-fit:cover;border-radius:3px}
+@media(max-width:600px){.dhara-activity-card{gap:11px}.dhara-activity-card img{width:92px;height:82px}.dhara-activity-copy strong{font-size:18px}.dhara-activity-arrow{margin-right:3px}.dhara-gallery-dialog{padding:10px}.dhara-gallery-stage{gap:4px}.dhara-gallery-stage img{max-width:calc(100% - 66px);max-height:55vh}.dhara-gallery-nav{width:29px;height:34px;font-size:24px}.dhara-gallery-thumbs img{width:52px;height:45px}}
