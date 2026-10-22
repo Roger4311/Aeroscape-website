@@ -7,6 +7,11 @@ document.getElementById('contact-form')?.addEventListener('submit', async functi
   const status = document.getElementById('form-status');
   const button = form.querySelector('button[type="submit"]');
   if (!form.reportValidity()) return;
+  const captchaToken = form.querySelector('[name="h-captcha-response"]')?.value;
+  if (!captchaToken) {
+    status.textContent = 'Please complete the spam verification before sending.';
+    return;
+  }
   button.disabled = true;
   button.textContent = 'Sending…';
   status.textContent = 'Sending your message…';
@@ -16,6 +21,7 @@ document.getElementById('contact-form')?.addEventListener('submit', async functi
     if (!response.ok || !result.success) throw new Error(result.message || 'Unable to send your message.');
     status.textContent = 'Thank you! Your message has been submitted.';
     form.reset();
+    if (window.hcaptcha && typeof window.hcaptcha.reset === 'function') window.hcaptcha.reset();
   } catch(error) {
     status.textContent = 'Message not sent. Please try again or email mital.p@zohomail.in.';
   } finally {
