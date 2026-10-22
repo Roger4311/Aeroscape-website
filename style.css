@@ -164,7 +164,7 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 .dhara-mission p{font-size:clamp(12px,1.15vw,15px);line-height:1.45;color:#d2ddcc;margin:0}
 .dhara-tagline{margin:auto 0 0;padding-top:28px;text-align:center;font:italic clamp(18px,2.3vw,28px) Georgia,serif;color:#f5f0db}
 .dhara-pledge{background:#f1f0de;color:#183c27;display:flex;flex-direction:column}
-.dhara-pledge-photo{min-height:320px;flex:1 1 auto;background:linear-gradient(180deg,transparent 65%,rgba(241,240,222,.2)),url("photo-24.jpeg") center/cover no-repeat}
+.dhara-pledge-photo{min-height:320px;flex:1 1 auto;background:linear-gradient(180deg,transparent 65%,rgba(241,240,222,.2)),url("dhara-tree-planting.jpg") center/cover no-repeat}
 .dhara-pledge-info{padding:26px clamp(24px,4vw,58px) 34px}
 .dhara-eyebrow{letter-spacing:.25em;font-weight:700;font-size:16px;margin:0 0 4px;color:#426436}
 .dhara-pledge-info h3{font-size:clamp(31px,4vw,57px);line-height:1.06;margin:0;letter-spacing:.025em;font-weight:800}
