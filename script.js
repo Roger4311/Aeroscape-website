@@ -51,6 +51,8 @@ document.getElementById('contact-form')?.addEventListener('submit', async functi
   };
   video.addEventListener('playing', () => { playButton.hidden = true; });
   video.addEventListener('loadeddata', tryPlay);
+  video.addEventListener('canplay', tryPlay);
+  document.addEventListener('touchstart', tryPlay, { once: true, passive: true });
   document.addEventListener('visibilitychange', () => { if (!document.hidden) tryPlay(); });
   window.addEventListener('pageshow', tryPlay);
   playButton.addEventListener('click', () => {
@@ -95,5 +97,6 @@ document.getElementById('contact-form')?.addEventListener('submit', async functi
   }
   // Mobile browsers may permit playback after the first user gesture.
   document.addEventListener('touchstart', tryPlay, { once: true, passive: true });
+  document.addEventListener('click', tryPlay, { once: true, passive: true });
   tryPlay();
 })();
