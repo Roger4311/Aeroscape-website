@@ -258,3 +258,5 @@ footer .footer-logo img{width:420px;max-width:100%;height:auto}
 
 /* Two Dhara Foundation activity cards: desktop side-by-side, mobile stacked. */
 .dhara-activity-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:1100px;margin:0 auto}.dhara-activity-grid .dhara-activity-card{width:100%;margin:0;min-width:0}.dhara-activity-grid .dhara-activity-copy{min-width:0}.dhara-activity-grid .dhara-activity-copy strong{font-size:clamp(17px,1.7vw,22px)}@media(max-width:760px){.dhara-activity-grid{grid-template-columns:1fr;gap:13px}}
+
+@media(min-width:761px){.header nav{gap:clamp(18px,2.2vw,38px);margin-right:clamp(24px,3vw,46px)}.header .navcta{flex-shrink:0}}
